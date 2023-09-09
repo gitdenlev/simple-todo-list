@@ -5,7 +5,11 @@ const taskList = document.querySelector("#task-list");
 function addTask() {
   if (inputTask.value == "") {
     Notiflix.Notify.Failure("Enter the task before adding");
-  } else {
+  }
+  else if (inputTask.value.trim() == "") {
+      Notiflix.Notify.Failure("Excessive whitespace detected");
+  }
+  else {
     let li = document.createElement("li");
     li.innerHTML = inputTask.value;
     taskList.appendChild(li);
