@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Dear List</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="todo_contrainer">
+        <h1>
+          Dear List<img src="./img/logo.png" alt="todo-list" width="40px" />
+        </h1>
+        <div class="task_container">
+          <input id="input-task" type="text" placeholder="Add your task" />
+          <button onclick="addTask()" type="button">Add</button>
+        </div>
+        <ul id="task-list"></ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/notiflix@2.7.0/dist/notiflix-aio-2.7.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
